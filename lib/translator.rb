@@ -28,6 +28,7 @@ def get_english_meaning(file_path, emoticon)
   emoticons.each do |k, v|
     if emoticons[k][v[1]] == emoticon
       return k
+      binding.pry
     end
   end
  "Sorry, that emoticon was not found"
