@@ -7,11 +7,10 @@ def load_library(path)
   # code goes here
   emoticon_lib = YAML.load_file(path)
   
-  get_meaning = {}
   result = {}
   
   emoticon_lib.each_with_object do |(k, v), result|
-    get_meaning[k] = { :english => v[0], :japanese => v[1] }
+    res[k] = { :english => v[0], :japanese => v[1] }
     if !result[k]
       result[k] = {}
       result[k].push(g)
