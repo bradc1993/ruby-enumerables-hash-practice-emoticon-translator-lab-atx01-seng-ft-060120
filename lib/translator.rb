@@ -9,8 +9,8 @@ def load_library(path)
   
   result = {}
   
-  emoticon_lib.each_with_object do |(k, v), result|
-    res[k] = { :english => v[0], :japanese => v[1] }
+  emoticon_lib.each
+    get_meaning[k] = { :english => v[0], :japanese => v[1] }
     if !result[k]
       result[k] = {}
       result[k].push(g)
