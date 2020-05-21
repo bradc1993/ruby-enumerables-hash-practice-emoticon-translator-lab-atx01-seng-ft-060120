@@ -29,6 +29,6 @@ def get_english_meaning(file_path, emoticon)
     if v[1] == emoticon
       return k
     end
-    
-
+  end
+ "Sorry, that "
 end
